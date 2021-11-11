@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Pickup-Futbol/static/css/main.0c024ebc.chunk.css",
+    "main.js": "/Pickup-Futbol/static/js/main.163baccf.chunk.js",
+    "main.js.map": "/Pickup-Futbol/static/js/main.163baccf.chunk.js.map",
+    "runtime-main.js": "/Pickup-Futbol/static/js/runtime-main.1ce23473.js",
+    "runtime-main.js.map": "/Pickup-Futbol/static/js/runtime-main.1ce23473.js.map",
+    "static/css/2.c58d5995.chunk.css": "/Pickup-Futbol/static/css/2.c58d5995.chunk.css",
+    "static/js/2.9cc928a1.chunk.js": "/Pickup-Futbol/static/js/2.9cc928a1.chunk.js",
+    "static/js/2.9cc928a1.chunk.js.map": "/Pickup-Futbol/static/js/2.9cc928a1.chunk.js.map",
+    "index.html": "/Pickup-Futbol/index.html",
+    "static/css/2.c58d5995.chunk.css.map": "/Pickup-Futbol/static/css/2.c58d5995.chunk.css.map",
+    "static/css/main.0c024ebc.chunk.css.map": "/Pickup-Futbol/static/css/main.0c024ebc.chunk.css.map",
+    "static/js/2.9cc928a1.chunk.js.LICENSE.txt": "/Pickup-Futbol/static/js/2.9cc928a1.chunk.js.LICENSE.txt",
+    "static/media/goldengg.9e79c532.jpeg": "/Pickup-Futbol/static/media/goldengg.9e79c532.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1ce23473.js",
+    "static/css/2.c58d5995.chunk.css",
+    "static/js/2.9cc928a1.chunk.js",
+    "static/css/main.0c024ebc.chunk.css",
+    "static/js/main.163baccf.chunk.js"
+  ]
+}
