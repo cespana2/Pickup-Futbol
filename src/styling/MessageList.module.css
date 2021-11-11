@@ -1,0 +1,29 @@
+.chatUi {
+    overflow: auto;
+    height: 400px;
+    padding-bottom: 50px;
+}
+
+.msgList {
+    text-align: left;
+    list-style-type: none;
+}
+
+.name {
+    font-size: small;
+    padding-top: 5px;
+}
+
+.msg {
+    border-radius: 6px;
+    color: white;
+    background-color: lightblue;
+    padding: 5px;
+    display: inline;
+}
+
+.myMsg {
+    text-align: right;
+    list-style-type: none;
+    padding-right: 4%;
+}
