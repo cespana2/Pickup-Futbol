@@ -36,7 +36,7 @@ const MessageList = ({ playerInfo, event, currentUser }) => {
             className={chat.uid === user.uid ? classes.myMsg : classes.msgList}
           >
             <div className={classes.name}>{chat.name}</div>
-            <div className={classes.msg}>{chat.message}</div>
+            <div className={chat.uid === user.uid ? classes.myMsgText : classes.msg}>{chat.message}</div>
           </li>
         ))}
         <div ref={messagesEndRef}/>

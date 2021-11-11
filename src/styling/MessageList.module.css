@@ -27,3 +27,11 @@
     list-style-type: none;
     padding-right: 4%;
 }
+
+.myMsgText {
+    border-radius: 6px;
+    color: white;
+    background-color: gray;
+    padding: 5px;
+    display: inline;
+}
