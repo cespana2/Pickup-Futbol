@@ -53,6 +53,7 @@ const ChatBox = ({ chatLog, user, chatInfo, playerInfo, currentUser }) => {
         className={classes.chatBox}
         ref={messageInputRef}
         type="text"
+        on
       />
     </form>
   );

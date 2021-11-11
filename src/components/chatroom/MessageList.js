@@ -24,7 +24,7 @@ const MessageList = ({ playerInfo, event, currentUser }) => {
       setChatMsgs(info.messages);
     });
 
-    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" })
+    messagesEndRef.current?.scrollIntoView({ behavior: "smooth", block: "nearest" })
   }, [chatLog, event.eventId]);
 
   return (
@@ -41,7 +41,7 @@ const MessageList = ({ playerInfo, event, currentUser }) => {
         ))}
         <div ref={messagesEndRef}/>
       </ul>
-      <section>
+      <section onClick>
         <ChatBox
           chatLog={chatMsgs}
           user={user}
