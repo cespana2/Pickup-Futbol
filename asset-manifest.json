@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Pickup-Futbol/static/css/main.a879e337.chunk.css",
-    "main.js": "/Pickup-Futbol/static/js/main.cdadbf24.chunk.js",
-    "main.js.map": "/Pickup-Futbol/static/js/main.cdadbf24.chunk.js.map",
+    "main.js": "/Pickup-Futbol/static/js/main.febcdc94.chunk.js",
+    "main.js.map": "/Pickup-Futbol/static/js/main.febcdc94.chunk.js.map",
     "runtime-main.js": "/Pickup-Futbol/static/js/runtime-main.1ce23473.js",
     "runtime-main.js.map": "/Pickup-Futbol/static/js/runtime-main.1ce23473.js.map",
     "static/css/2.c58d5995.chunk.css": "/Pickup-Futbol/static/css/2.c58d5995.chunk.css",
@@ -19,6 +19,6 @@
     "static/css/2.c58d5995.chunk.css",
     "static/js/2.6252e5a4.chunk.js",
     "static/css/main.a879e337.chunk.css",
-    "static/js/main.cdadbf24.chunk.js"
+    "static/js/main.febcdc94.chunk.js"
   ]
 }
