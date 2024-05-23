@@ -1,41 +1,57 @@
-.welcome {
-  padding-left: 1rem;
+.container {
+  background-color: transparent;
+  border-radius: 6px;
+  margin: 120px auto;
+  width: 100%;
+  max-width: 600px;
+  height: 100%; /* Change height to auto to allow content to determine height */
+  text-align: center;
+  display: flex; /* Use flexbox to center align content */
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center align children horizontally */
+  justify-content: center; /* Center align children vertically */
+  color: white;
+  padding-bottom: 2.5rem;
 }
 
 .form {
   padding: 1rem;
+  text-align: center; /* Center align form elements */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 600px;
 }
 
 input[type="text"],
 input[type="password"],
 input[type="email"] {
-  display: block;
   font: inherit;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-  padding: 0.25rem;
-  width: 50%;
+  border-radius: 30px;
+  padding: 0.5rem;
+  width: 70%; /* Use 100% width to fill the container */
+  margin: 1rem 0; /* Add some vertical spacing between inputs */
+  background-color: rgba(211, 206, 206, 0.467);  
+  color: black;
+  border-collapse: separate;
 }
 
-label {
-  display: block;
-  font-weight: bold;
-
-}
-
-.container {
-  background-color: #f2f2f2;
-  border-radius: 6px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); 
-  margin: 3rem auto;
-  width: 90%;
-  max-width: 60rem;
-}
-
-.btnContainer {
-  padding-top: 10px;
+.acctBtn {
+  width: 290px;
+  background-color: rgba(236, 229, 229, 0.844);
+  padding: 0.5rem;
+  border-collapse: separate;
+  overflow: hidden;
+  border-radius: 30px;
+  width: 400px;
+  border: none;
+  margin-top: 1rem;
 }
 
 .incPass {
-  border-color: red;
+  border: 2px solid red;
+}
+
+.corPass {
+  border-color: green;
 }

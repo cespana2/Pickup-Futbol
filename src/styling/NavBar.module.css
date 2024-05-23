@@ -1,17 +1,16 @@
+/* If screen is wider thatn 768px */
 .header {
     width: 100%;
     height: 5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: lightblue;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 16%, rgba(0,212,255,1) 100%);
     padding: 0 10%;
   }
   
   .logo {
-    font-size: 2rem;
-    color: black;
-    font-weight: bold;
+    padding-top: 30px;
   }
   
   .header ul {
@@ -30,6 +29,7 @@
     text-decoration: none;
     font-size: 1.5rem;
     color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
   
   .header a:hover,
@@ -38,10 +38,75 @@
     color: white;
   }
   
-  .badge {
+  /* .badge {
     background-color: #cc2062;
     color: white;
     border-radius: 12px;
     padding: 0 1rem;
     margin-left: 0.5rem;
+  } */
+
+  .respNav {
+    display: none;
+    /* width: 50%;
+    border: 1px solid black; */
+  }
+
+  .respList {
+    border: 1px solid black;
+    width: 20%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin-top: 5rem;
+    transform: translateX(100%);
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+  }
+
+  .togRespList {
+    border: 5px solid red;
+    width: 30%;
+    background-color: white;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    /* margin-left: 400px; */
+    margin-top: 5rem;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+  }
+
+  @media (max-width: 768px) {
+    .header {
+      padding: 0 5%; /* Reduce padding on smaller screens */
+    }
+  
+    .header li {
+      margin-left: 1rem; /* Reduce margin between list items on smaller screens */
+    }
+
+    /* .header ul {
+      list-style: none;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      border: 1px solid red;
+      position: fixed;
+    } */
+
+    .nav {
+      display: none;
+    }
+
+    .respNav {
+      display: block;
+      width: 10px;
+      color: black;
+      padding: 0 10%;
+    }
+  
   }

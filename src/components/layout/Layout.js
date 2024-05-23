@@ -5,7 +5,7 @@ function Layout(props) {
     <div>
       <NavBar />
       <main>{props.children}</main>
-      <footer style={{position: "static", bottom: 20, textAlign: "center", width: "100%"}}><p>&copy; Carlos Alberto Espana Jr.</p></footer>
+      <footer style={{position: "absolute", bottom: 0, textAlign: "center", width: "100%", marginTop: "-200px"}}><p>&copy; Carlos Alberto Espana Jr.</p></footer>
     </div>
   );
 }

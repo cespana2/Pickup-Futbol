@@ -40,22 +40,20 @@ const Login = ({member, findMember}) => {
     <div className={classes.container}>
       <h1 className={classes.welcome}>Login</h1>
       <form onSubmit={submitHandler} className={classes.form}>
-        <label>Email</label>
         <input
           type="text"
           name="email"
           placeholder="Email"
           ref={emailInputRef}
         />
-        <label>Password</label>
         <input
           type="password"
           name="password"
           placeholder="Password"
           ref={passwordInputRef}
         />
-        <div className={classes.btnContainer}>
-          <button>Submit</button>
+        <div>
+          <button className={classes.lgnBtn}>Login</button>
         </div>
         <Link className={classes.link} to="/create-account">
           No Account? Create an Account

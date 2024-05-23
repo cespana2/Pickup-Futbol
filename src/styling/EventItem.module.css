@@ -11,6 +11,10 @@ th {
   background-color: lightblue;
 }
 
+tr {
+  background-color: white;
+}
+
 tr:nth-child(odd) {
     background-color: white;
 }
@@ -27,6 +31,6 @@ tr:nth-child(odd) {
   font-family: arial, sans-serif;
   /*input has OS specific font-family*/
   color: #069;
-  text-decoration: underline;
-  cursor: pointer;
+  text-decoration: none;
+  cursor: pointer;;
 }

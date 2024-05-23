@@ -4,9 +4,12 @@ import { Link } from "react-router-dom";
 import classes from "../../styling/NavBar.module.css";
 import "bootstrap/dist/css/bootstrap.css";
 import { firebase } from "../../config/Firebase";
+import logo from "../../images/Pickup Futbol1.png"
+import Hamburger from "hamburger-react";
 
 const NavBar = () => {
   const [authUser, setAuthUser] = useState(null);
+  const [navVisible, setNavVisible] = useState(false);
   
 
   function authListener() {
@@ -21,7 +24,7 @@ const NavBar = () => {
 
   useEffect(() => {
     authListener();
-  });
+  }, [authUser]);
 
   function signOut() {
     firebase
@@ -35,11 +38,21 @@ const NavBar = () => {
       });
   }
 
+  function toggleNav() {
+    setNavVisible(!navVisible)
+  }
+
   if (authUser) {
     return (
       <header className={classes.header}>
-        <div className={classes.logo}>Pickup Futbol</div>
-        <nav>
+        <div className={classes.logo}>
+          <img
+            src={logo}
+            alt="pickup-logo"
+            width="120px"
+          />
+        </div>
+        <nav className={`${navVisible ? ' ' : classes.nav}`}>
           <ul>
             <li>
               <Link to="/home">Home</Link>
@@ -54,15 +67,25 @@ const NavBar = () => {
             </li>
           </ul>
         </nav>
+        <div className={classes.respNav}>
+          <Hamburger onToggle={() => toggleNav()} size={30}/>
+        </div>
+        {/* <div className={`${navVisible ? classes.togRespList : classes.respList}`}>
+          
+        </div> */}
       </header>
     );
   } 
 
   return (
     <header className={classes.header}>
-      <div>
-        <Link className={classes.logo} to="/">
-          Pickup Futbol
+      <div className={classes.logo}>
+        <Link to="/">
+          <img
+              src={logo}
+              alt="pickup-logo"
+              width="120px"
+          />        
         </Link>
       </div>
       <nav>

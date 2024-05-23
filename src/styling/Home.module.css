@@ -2,12 +2,22 @@
     text-align: center;
   }
 
-  .container {
-    background-color: #f2f2f2;
-    border-radius: 6px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); 
-    margin: 3rem auto;
-    width: 90%;
-    max-width: 60rem;
+.container {
+  background-color: #f2f2f2;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); 
+  margin: 3rem auto;
+  width: 70%;
+  max-width: 60rem;
     
-  }
+}
+
+body {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 16%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}

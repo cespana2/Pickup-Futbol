@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
 import classes from "../../styling/CreateAccountForm.module.css"
 
@@ -8,8 +8,25 @@ const CreateAccount = ({addMember}) => {
   const emailInputRef = useRef();
   const passwordInputRef = useRef();
   const cpasswordInputRef = useRef();
-  
 
+  // State to manage whether password and confirm password match
+  const [passwordMismatch, setPasswordMismatch] = useState(false);
+
+  // Handler to check if password matches or not when it changes 
+  const handlePasswordChange = () => {
+    if (passwordMismatch) {
+      setPasswordMismatch(false);
+    }
+  };
+
+  // Handler to check if the confirmed password matches or not when it changes
+  const handleConfirmPasswordChange = () => {
+    if (passwordMismatch) {
+      setPasswordMismatch(false);
+    }
+  };
+
+  // Handler for form submission
   function submitHandler(event) {
     event.preventDefault();
 
@@ -19,6 +36,12 @@ const CreateAccount = ({addMember}) => {
     const enteredPassword = passwordInputRef.current.value;
     const enteredConfirmPassword = cpasswordInputRef.current.value;
 
+    if (enteredPassword != enteredConfirmPassword) {
+      setPasswordMismatch(true)
+      return;
+    }
+
+    // Creating new acount object with account data
     const newAccountData = {
         fname: enteredFirstName,
         lname: enteredLastName,
@@ -28,46 +51,48 @@ const CreateAccount = ({addMember}) => {
     }
 
     addMember(newAccountData);
-
   }
 
   return (
     <div className={classes.container}>
-      <h1 className={classes.welcome}>Become a Member</h1>
+      <h1>Become a Member</h1>
       <form onSubmit={submitHandler} className={classes.form}>
-        <label>First Name</label>
         <input
           type="text"
           placeholder="First Name"
           ref={fnameInputRef}
+          required
         />
-        <label>Last Name</label>
         <input
           type="text"
           placeholder="Last Name"
           ref={lnameInputRef}
+          required
         />
-        <label>Email</label>
         <input
           type="email"
           placeholder="Email"
           ref={emailInputRef}
+          required
         />
-        <label>Password</label>
         <input
           type="password"
           placeholder="Password"
           ref={passwordInputRef}
+          onChange={handlePasswordChange}
+          required
         />
-        <label>Confirm Password</label>
         <input
           type="password"
           placeholder="Confirm Password"
           ref={cpasswordInputRef}
-          className={cpasswordInputRef !== passwordInputRef ? classes.incPass : "input"} 
+          onChange={handleConfirmPasswordChange}
+          className={passwordMismatch ? classes.incPass : ""} 
+          required
         />
-        <div className={classes.btnContainer}>
-          <button>Create Account</button>
+        {passwordMismatch && <p className={classes.error}>Passwords do not match</p>}
+        <div>
+          <button className={classes.acctBtn}>Create Account</button>
         </div>
       </form>
     </div>

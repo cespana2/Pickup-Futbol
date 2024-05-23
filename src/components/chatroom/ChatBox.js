@@ -47,7 +47,7 @@ const ChatBox = ({ chatLog, user, chatInfo, playerInfo, currentUser }) => {
   }
 
   return (
-    <form onSubmit={newMessage}>
+    <form onSubmit={newMessage} style={{display: 'grid',placeItems: 'center'}}>
       <input
         placeholder="Chat Here"
         className={classes.chatBox}
