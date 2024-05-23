@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Pickup-Futbol/static/css/main.2f695508.chunk.css",
+    "main.css": "/Pickup-Futbol/static/css/main.ecc190fa.chunk.css",
     "main.js": "/Pickup-Futbol/static/js/main.d7e6dfc8.chunk.js",
     "main.js.map": "/Pickup-Futbol/static/js/main.d7e6dfc8.chunk.js.map",
     "runtime-main.js": "/Pickup-Futbol/static/js/runtime-main.1ce23473.js",
@@ -10,7 +10,7 @@
     "static/js/2.9c5500bd.chunk.js.map": "/Pickup-Futbol/static/js/2.9c5500bd.chunk.js.map",
     "index.html": "/Pickup-Futbol/index.html",
     "static/css/2.c58d5995.chunk.css.map": "/Pickup-Futbol/static/css/2.c58d5995.chunk.css.map",
-    "static/css/main.2f695508.chunk.css.map": "/Pickup-Futbol/static/css/main.2f695508.chunk.css.map",
+    "static/css/main.ecc190fa.chunk.css.map": "/Pickup-Futbol/static/css/main.ecc190fa.chunk.css.map",
     "static/js/2.9c5500bd.chunk.js.LICENSE.txt": "/Pickup-Futbol/static/js/2.9c5500bd.chunk.js.LICENSE.txt",
     "static/media/Pickup Futbol1.c1e7d851.png": "/Pickup-Futbol/static/media/Pickup Futbol1.c1e7d851.png",
     "static/media/goldengg.9e79c532.jpeg": "/Pickup-Futbol/static/media/goldengg.9e79c532.jpeg",
@@ -20,7 +20,7 @@
     "static/js/runtime-main.1ce23473.js",
     "static/css/2.c58d5995.chunk.css",
     "static/js/2.9c5500bd.chunk.js",
-    "static/css/main.2f695508.chunk.css",
+    "static/css/main.ecc190fa.chunk.css",
     "static/js/main.d7e6dfc8.chunk.js"
   ]
 }
